@@ -103,6 +103,7 @@ var Configuration = map[string]PathConfig{
 	"sh":      Allowed,
 	"tr":      Allowed,
 	"unzip":   Allowed,
+	"zcat":     Allowed,
 	"zip":     Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
