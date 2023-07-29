@@ -100,6 +100,7 @@ var Configuration = map[string]PathConfig{
 	"m4":      Allowed,
 	"nproc":   Allowed,
 	"openssl": Allowed,
+	"pahole":  Allowed,
 	"perl":    Allowed,
 	"pstree":  Allowed,
 	"repo":    Allowed,
@@ -108,7 +109,7 @@ var Configuration = map[string]PathConfig{
 	"stubby":  Allowed,
 	"tr":      Allowed,
 	"unzip":   Allowed,
-	"zcat":     Allowed,
+	"zcat":    Allowed,
 	"zip":     Allowed,
 
 	// Kernel tools (VDSO)
