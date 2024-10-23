@@ -54,7 +54,7 @@ def parse_args():
   parser.add_argument('--platform-version-known-codenames', required=True)
   parser.add_argument('--platform-version-last-stable', required=True)
   parser.add_argument('--product', required=True)
-  parser.add_argument('--yaap-device', required=True)
+  parser.add_argument('--bootleggers-device', required=True)
 
   parser.add_argument('--out', required=True, type=argparse.FileType('w'))
 
@@ -144,7 +144,7 @@ def main():
 
     print(f"# ro.build.product is obsolete; use ro.product.device")
     print(f"ro.build.product={option.device}")
-    print(f"ro.yaap.device={option.yaap_device}")
+    print(f"ro.bootleggers.device={option.bootleggers_device}")
 
     print(f"# Do not try to parse description or thumbprint")
     print(f"ro.build.description?={build_desc}")

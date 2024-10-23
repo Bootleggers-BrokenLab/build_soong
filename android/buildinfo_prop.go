@@ -157,7 +157,7 @@ func (p *buildinfoPropModule) GenerateAndroidBuildActions(ctx ModuleContext) {
 	cmd.FlagWithArg("--platform-version-known-codenames=", config.PlatformVersionKnownCodenames())
 	cmd.FlagWithArg("--platform-version-last-stable=", config.PlatformVersionLastStable())
 	cmd.FlagWithArg("--product=", config.DeviceProduct())
-	cmd.FlagWithArg("--yaap-device=", config.Getenv("YAAP_DEVICE"))
+	cmd.FlagWithArg("--bootleggers-device=", config.Getenv("BOOTLEGGERS_DEVICE"))
 
 	cmd.FlagWithOutput("--out=", p.outputFilePath)
 
